@@ -1,0 +1,129 @@
+basic unix commands
+-------------------
+ls
+ls -l
+ls -a
+pwd
+cd <directory name>
+cd ..
+
+to create a file using vi editor
+--------------------------------
+vi testFile - to create a new file
+press i to enter into edit/insert mode
+then type the content of the file
+next to exit the edit/insert mode press esc
+next to come out of the file completely press shift+ZZ
+type ls to check for the file that we just created
+
+file related commands
+---------------------
+cat <filename> - to print the contants of the file on the terminal
+wc <filename> - displays the no. of lines, no. of words, no.of characters and the file name
+cp <oldfile> <newfile> - copies the contents of oldfile into a newfile by creating the newfile
+mv <oldfilename> <newfilename> - renames an old file with the new file name
+rm <filename> - deletes the file
+
+
+https://www.networkworld.com/article/3215965/all-you-need-to-know-about-unix-environment-variables.html
+
+absolute path
+relative path
+
+d:/programs
+/
+
+relative path
+-------------
+d:/poongs ----->/new downloads
+
+d: ------> /new downloads
+absolute path
+-------------
+
+d:/poongs/new downloads
+
+
+
+vi editor
+--------
+
+when we open a file using vi command line editor, we have 2 modes
+  - command mode ( press esc to move to command mode)
+  - insert mode ( press i to move to insert mode)
+
+in command mode
+---------------
+shift+ZZ -> saves the file and quits the editor
+:q -> quit the editor, editor will warn you if file is not saved and will not allow you to quit until you save
+:q! ->quit the editor no matter what
+:w -> saves the file and stay in the editor
+
+
+file permissions
+----------------
++ -> appends the permissions (specified after +)
+- -> remove specific permissions (specified after -)
+= -> re-assigns the permissions (specified after =)
+
+u -> user/owner
+g -> group
+o -> others
+
+r -> read
+w -> write
+x -> execute
+
+chmod -> to change file permissions
+chown -> change owner (chowner changedUser fileName)
+chgrp -> change group
+
+create a new group
+------------------
+groupadd <newgroupname>
+
+add an existing user to an existing group
+------------------------------------------
+usermod -a -G <newgroupname> <existingusername> 
+
+numbers for file permission
+--------------- -------------
+0 ---
+1 --x
+2 -w-
+3 -wx
+4 r--
+5 r-x
+6 rw-
+7 rwx
+
+chmod 764 testFile
+
+package managers
+-----------------
+
+npm -> node package manager
+
+
+
+
+
+git
+---
+1) plz make sure git is installed
+2) create a github account in www.github.com
+3) get some intro about git
+4) git vs git hub vs git bash
+
+
+aws - amazon web service
+---
+1) create a aws account in https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fportal.aws.amazon.com%2Fbilling%2Fsignup%2Fresume&client_id=signup&code_challenge_method=SHA-256&code_challenge=PiQmmcGG0RMz43C4XlpbIJRnG8DVSUSx7SrZXuZW4a8
+2) get some intro about aws, aws ec2, aws ami 
+
+
+
+
+
+
+
